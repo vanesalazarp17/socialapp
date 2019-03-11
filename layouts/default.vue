@@ -103,6 +103,11 @@ export default {
           icon: 'bubble_chart',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'search',
+          title: 'Nico',
+          to: '/nico'
         }
       ],
       miniVariant: false,
