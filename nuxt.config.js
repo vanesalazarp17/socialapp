@@ -54,20 +54,40 @@ module.exports = {
   /*
   ** Build configuration
   */
+  babel: {
+  presets: [
+    'es2015',
+    'stage-0'
+  ],
+  plugins: [
+    ['transform-runtime', {
+      'polyfill': true,
+      'regenerator': true,
+    }]
+  ],
+},
+
+vendor: ['axios', 'babel-polyfill'],
+
   build: {
+    publicPath: '/public/',
+    vendor: ['axios'],
+    extractCSS: true,
     transpile: ['vuetify/lib'],
+
     plugins: [new VuetifyLoaderPlugin()],
+
     loaders: {
       stylus: {
         import: ["~assets/style/variables.styl"]
       }
     },
-    
+
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }
