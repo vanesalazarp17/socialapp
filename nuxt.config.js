@@ -1,8 +1,10 @@
+
+
 const pkg = require('./package')
 
 
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-
+buildDir: '../functions/nuxt',
 module.exports = {
   mode: 'spa',
 
