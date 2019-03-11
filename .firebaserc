@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "socialapp": "socialapp-irav",
+    "default": "socialapp-irav"
+  }
+}
